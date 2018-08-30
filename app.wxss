@@ -1,0 +1,42 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+page{
+  background-color: #fff;
+}
+.width{
+  width:100%
+}
+.blod{
+  font-weight: bold;
+}
+/*左右布局 按顺序排列*/
+.start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+/*左右布局 先排两端*/
+.between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+/*左右布局 等间距排列*/
+.around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.big-img{
+  width:100%;
+}
+
