@@ -7,18 +7,30 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
+    hiddenModal:true,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
+  listenerConfirm: function () {
+    console.log('2')
+    this.setData({
+      hiddenModal: true
+    })
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../answer/answer'
     })
   },
-  redirect:function(){
-    wx.navigateTo({
-      url: '../test/test'
+  listenerCancel: function () {
+    this.setData({
+      hiddenModal: true
     })
+  },
+
+  startAnswer:function(){
+    this.setData({
+      hiddenModal: false
+    })
+
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

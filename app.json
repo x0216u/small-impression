@@ -1,13 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/test/test"
+    "pages/answer/answer",
+    "pages/user/user"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "navigationBarBackgroundColor": "#302F41",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "答题",
+    "backgroundColor": "#302F41",
+    "backgroundTextStyle": "light"
   }
 }

@@ -1,0 +1,23 @@
+<!--pages/answer/answer.wxml-->
+<view>
+<view class='between padding'>
+<view>进度</view>
+<view>还剩600s</view>
+</view>
+<view class='back'>
+   <view class='margin start'>
+      <view class='redbutton'>单选</view>
+      <view class='title'>这是三亚哪个景区</view>
+   </view>
+   <view class='margin box'>
+      <image src="/icons/img/sanya.jpg"></image>
+   </view>
+
+    <view class='margin'>
+       <view class='quest'> A 天涯海角</view>
+       <view class='quest'>B 大小洞天</view>
+        <view class='quest'>C 千古情</view>
+    </view>
+</view>
+
+</view>

@@ -11,25 +11,25 @@
   <view style='width:100%'>
     <view style='width:90%;border:none;border-radius:20rpx' class='start box back '>
       <view style='width:49%;' class='index-padding'>
-        <view class='center'>答题机会</view>
+        <view class='center'>体力值</view>
         <view class='arround '>
           <view class='start gray'>
-            <view class='blod large'>20</view> 次</view>
+            <view class='blod large'>1</view></view>
         </view>
       </view>
       <view style='height:50rpx;border-right:1px solid #ddd;'></view>
       <view class='index-padding' style='width:50%'>
-        <view class='center'>排行榜</view>
+        <view class='center'>金币数量</view>
         <view class='arround'>
           <view class='start gray'>
-            <view class='blod large red'>未上榜</view> 名+</view>
+            <view class='blod large red'>2000</view> 个</view>
         </view>
       </view>
     </view>
   </view>
-  <image style='height:200rpx;width:90%;margin-top:40rpx;' src='/icons/img/answer.png'></image> 
+  <image style='height:200rpx;width:90%;margin-top:40rpx' bindtap='startAnswer'  src='/icons/img/back3.jpg'></image> 
   <view style="width:90%;margin-top:-200rpx;margin-bottom:40rpx;height:200rpx;color:#DEDBDB;font-size:15px">
-  <view class='start' style='color:#fff;padding:20rpx'>
+  <view class='start' style='color:#fff;padding:20rpx' bindtap='startAnswer' >
    <view class='bold bolder'>答题赢大奖</view>
    <view class='colorful'>Go!</view>
   </view>
@@ -39,10 +39,32 @@
 
   <view  style='width:100%'>
     <view style='width:90%' class='box between'>
-    <button style='width:45%'>赛季说明</button>
-    <button style='width:45%;background-color:#EC6F6A'>领取答题机会</button>
+    <button style='width:45%'>分享给好友</button>
+    <button style='width:45%;background-color:#EC6F6A' bindtap='startAnswer'  >去抽奖</button>
     </view>
   </view>
 
 
+</view>
+
+<modal 
+    title="小贴士"
+     hidden="true"
+     confirm-text="确定"
+     cancel-text="取消"
+     bindconfirm="listenerConfirm"
+     bindcancel="listenerCancel" >
+     开始答题会消耗一个体力值，答题过程中切勿退出
+</modal>
+
+<view class="modal-mask" bindtap="listenerCancel"  wx:if="{{!hiddenModal}}"></view>
+<view class="modal-dialog" wx:if="{{!hiddenModal}}">
+  <view class="modal-title">小贴士</view>
+  <view class="modal-content">
+   开始答题会消耗一个体力值，答题过程中切勿退出
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="listenerCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="listenerConfirm" data-status="confirm">确定</view>
+  </view>
 </view>

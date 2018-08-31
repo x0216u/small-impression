@@ -26,7 +26,7 @@ page{
 .between{
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 /*左右布局 等间距排列*/
 .arround{
@@ -41,4 +41,66 @@ page{
 .big-img{
   width:100%;
 }
+
+/**模态窗口**/
+.modal-mask {
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background: #000;
+ opacity: 0.5;
+ overflow: hidden;
+ z-index: 9000;
+ color: #fff;
+}
+ 
+.modal-dialog {
+ width: 540rpx;
+ overflow: hidden;
+ position: fixed;
+ top: 50%;
+ left: 0;
+ z-index: 9999;
+ background: #f9f9f9;
+ margin: -180rpx 105rpx;
+ border-radius: 36rpx;
+}
+ 
+.modal-title {
+ padding-top: 50rpx;
+ font-size: 36rpx;
+ color: #75307B;
+ text-align: center;
+ font-weight: bolder;
+}
+ 
+.modal-content {
+ padding: 50rpx 32rpx;
+ color:#353535;
+ font-size:11pt;
+}
+.modal-footer {
+ display: flex;
+ flex-direction: row;
+ height: 86rpx;
+ border-top: 1px solid #dedede;
+ font-size: 34rpx;
+ line-height: 86rpx;
+}
+.btn-cancel {
+ width: 50%;
+ color: #666;
+ text-align: center;
+ border-right: 1px solid #dedede;
+}
+ 
+.btn-confirm {
+ width: 50%;
+ color: #ec5300;
+ text-align: center;
+}
+
+
 

@@ -1,9 +1,0 @@
-<!--pages/test/test.wxml-->
-<view>
-<image class='big-img' mode='aspectFill' src='/icons/img/index.png'></image>
-<view class=' width bold' style='text-align:center'>小程序知多少</view>
-<view>
-   <button class='green'>开始答题</button>
-   <button class='white'>邀请好友</button>
-</view>
-</view>
