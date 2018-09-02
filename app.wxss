@@ -60,7 +60,7 @@ page{
  width: 540rpx;
  overflow: hidden;
  position: fixed;
- top: 50%;
+ top: 45%;
  left: 0;
  z-index: 9999;
  background: #f9f9f9;
@@ -69,7 +69,7 @@ page{
 }
  
 .modal-title {
- padding-top: 50rpx;
+ padding-top: 20rpx;
  font-size: 36rpx;
  color: #75307B;
  text-align: center;
@@ -77,7 +77,7 @@ page{
 }
  
 .modal-content {
- padding: 50rpx 32rpx;
+ padding: 35rpx 32rpx;
  color:#353535;
  font-size:11pt;
 }
@@ -100,6 +100,13 @@ page{
  width: 50%;
  color: #ec5300;
  text-align: center;
+}
+.progress{
+  border: 1px solid #c05282;
+  border-radius: 12rpx;
+   width:250rpx;
+   height:20rpx;
+   margin-left: 10rpx;
 }
 
 

@@ -1,0 +1,15 @@
+/* pages/award/award.wxss */
+page{
+     background: linear-gradient(to right bottom,#ec659f,#EC6D70,#f05e9d); 
+  color:#fff;
+  font-size:13px; 
+  height: 100%;
+  width: 100%;
+}
+.circle {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  height: 20rpx;
+  width: 20rpx;
+}

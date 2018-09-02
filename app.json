@@ -3,13 +3,15 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/answer/answer",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/main/main",
+    "pages/award/award"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#302F41",
+    "navigationBarBackgroundColor": "#c05282",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "答题",
-    "backgroundColor": "#302F41",
+    "backgroundColor": "#c05282",
     "backgroundTextStyle": "light"
   }
 }

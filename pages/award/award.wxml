@@ -1,0 +1,5 @@
+<!--pages/award/award.wxml-->
+<view>
+ <view class="circle" wx:for="{{circleList}}" style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>
+</view>
+<canvas style="width: 750rpx; height: 750rpx;" canvas-id="firstCanvas"></canvas>

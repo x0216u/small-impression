@@ -1,4 +1,4 @@
-/* pages/index.wxss */
+/* pages/main/main.wxss */
 page{
    background: linear-gradient(to right bottom,#ec659f,#EC6D70,#f05e9d); 
    /* background: #f38b54; */
@@ -19,7 +19,7 @@ page{
   height:128rpx;
   border-radius: 50%;
   border:1px solid #f9ae12;
-  box-shadow: 1px 1px 1px #ffd869,-1px -1px 1px #ffd869,-1px 1px 1px #ffd869,1px -1px 1px #ffd869;
+  box-shadow: 2px 2px 2px #ffd869;
 }
 .userinfo{
   padding-bottom: 20rpx;

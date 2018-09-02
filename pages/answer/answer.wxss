@@ -1,23 +1,24 @@
 /* pages/answer/answer.wxss */
 page{
-  background-color: #302F41;
+    background: linear-gradient(to right bottom,#ec659f,#EC6D70,#f05e9d); 
   color:#fff;
   font-size:13px; 
   height: 100%;
   width: 100%;
 }
 .padding{
- padding: 5px 30rpx; 
+ padding: 5px 50rpx; 
 }
 .back{
   position: absolute;
-  left: 30rpx;
-  right:  30rpx;
-  bottom:  30rpx;
-  top: 70rpx;
+  left: 50rpx;
+  right:  50rpx;
+  bottom:  50rpx;
+  top: 90rpx;
   background-color: #fff;
   border-radius: 10rpx;
   color:#1B1B1B;
+  opacity: 1;
 }
 .redbutton{
   border-radius: 30rpx;
@@ -37,6 +38,7 @@ page{
   font-size: 16px;
   font-weight: bolder;
   padding-left: 10px;
+  color:#888888;
 }
 image{
   width:100%;
@@ -46,6 +48,12 @@ image{
 .quest{
   background-color: #EEEEEE;
   padding:8px 10px;
-  border-radius: 30rpx;
+  border-radius: 40rpx;
   margin-bottom: 30rpx;
 }
+.choose{
+  background: -webkit-linear-gradient(right,#8b2c95,#9938a7,#8c2380); 
+  color:#fff;
+  opacity: 0.8;
+}
+

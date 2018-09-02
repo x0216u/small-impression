@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--main.wxml-->
 <view class="container">
 <view bindtap='openRule' style='width:100%;'>
        
@@ -8,7 +8,7 @@
  <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
@@ -52,7 +52,7 @@
         <view>开始答题</view>
       </view>
     </view>
-    <view class='block' style='background:linear-gradient(to bottom left,#f7a172,#f38b54);opacity:0.9; height:350rpx;' bindtap='startAward'>
+    <view class='block' style='background:linear-gradient(to bottom left,#f7a172,#f38b54);opacity:0.9; height:350rpx;'>
 
       <view style='margin:0px auto;width:90%;text-align:center;'>
         <image src='/icons/img/award.png' style='height:128rpx;width:128rpx;'></image>

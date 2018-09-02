@@ -1,4 +1,4 @@
-// pages/index.js
+// pages/main/main.js
 const app = getApp()
 Page({
   data: {
@@ -6,7 +6,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     hiddenModal: true,
-    ruleModal: false,
+    ruleModal:false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
@@ -28,12 +28,7 @@ Page({
       ruleModal: false
     })
   },
-  startAward:function(){
-    wx.navigateTo({
-      url: '../award/award'
-    })
-  },
-  openRule: function () {
+  openRule:function(){
     this.setData({
       ruleModal: true
     })

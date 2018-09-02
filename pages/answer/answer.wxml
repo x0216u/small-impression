@@ -1,22 +1,29 @@
 <!--pages/answer/answer.wxml-->
 <view>
 <view class='between padding'>
-<view>进度</view>
-<view>还剩600s</view>
+<view class='start'>
+  <image src='/icons/img/progress.png' style='width:40rpx;height:40rpx;margin-right:5px;border-radius:0px;'></image>
+  <view>{{now}}/{{all}}</view>
+</view>
+<view class='start'>
+  <image src='/icons/img/time.png' style='width:40rpx;height:40rpx;margin-right:5px'></image>
+  <view>{{wait}}s</view>
+</view>
 </view>
 <view class='back'>
    <view class='margin start'>
-      <view class='redbutton'>单选</view>
+      <view class='redbutton'>{{que_type}}</view>
       <view class='title'>这是三亚哪个景区</view>
    </view>
    <view class='margin box'>
-      <image src="/icons/img/sanya.jpg"></image>
+      <image src="{{que_image}}"></image>
    </view>
 
     <view class='margin'>
-       <view class='quest'> A 天涯海角</view>
-       <view class='quest'>B 大小洞天</view>
-        <view class='quest'>C 千古情</view>
+      <view wx:for="{{que_answer}}"  wx:for-item="answer" class='quest {{answer.checked?"choose":""}} '  data-index="{{answer.index}}" bindtap='chooseAnswer'  >
+        {{answer.index}}  {{answer.content}}
+      </view>
+      
     </view>
 </view>
 
