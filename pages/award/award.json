@@ -1,1 +1,7 @@
-{}
+{
+  "navigationBarBackgroundColor": "#c05282",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "幸运抽奖",
+  "backgroundColor": "#c05282",
+  "backgroundTextStyle": "light"
+}
