@@ -13,3 +13,19 @@ page{
   height: 20rpx;
   width: 20rpx;
 }
+.zhuanpan{
+  position: absolute;
+  width:150rpx;
+  height:150rpx;
+  left:300rpx;
+  top:300rpx;
+  z-index: 10;
+}
+.startimg{
+   position: absolute;
+  width:150rpx;
+  height:150rpx;
+  left:300rpx;
+  top:300rpx;
+  z-index: 11;
+}

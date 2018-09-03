@@ -2,4 +2,10 @@
 <view>
  <view class="circle" wx:for="{{circleList}}" style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>
 </view>
-<canvas style="width: 750rpx; height: 750rpx;" canvas-id="firstCanvas"></canvas>
+<view animation="{{aniData}}" id='canvas-container' style='width:750rpx;height:750rpx;position:absolute;background-color:gray' >
+<canvas    style="width: 750rpx; height: 750rpx;" canvas-id="firstCanvas"></canvas>
+</view>
+
+<cover-image class='zhuanpan' src="/icons/img/startaward.png" catchtap='touchCanvas' />
+<!-- <image src='/icons/img/startaward.png' bindtap="startAward" class='zhuanpan'></image> -->
+<!-- <image src='/icons/img/startaward.png' bindtap="startAward" style='width:150rpx;height:150rpx'></image> -->
