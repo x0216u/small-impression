@@ -69,7 +69,7 @@
         <view>排行榜</view>
       </view>
     </view>
-    <view class='block' style='background:linear-gradient(to top right, #a3d8d6, #88cd9c);opacity:0.9; height:250rpx;'>
+    <view class='block' bindtap='genePic' style='background:linear-gradient(to top right, #a3d8d6, #88cd9c);opacity:0.9; height:250rpx;'>
       <view style='margin:0px auto;width:90%;text-align:center;'>
         <image src='/icons/img/inspe.png' style='height:128rpx;width:128rpx;'></image>
         <view>印象首页</view>

@@ -1,0 +1,10 @@
+<!--pages/award/award.wxml-->
+<view>
+ <view class="circle" wx:for="{{circleList}}" style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>
+</view>
+
+<image animation="{{aniData}}" src="/icons/img/zhuanpan.png" class='zhuanpan'></image>
+
+<cover-image class='startimg' src="/icons/img/startaward.png" catchtap='touchCanvas' />
+<!-- <image src='/icons/img/startaward.png' bindtap="startAward" class='zhuanpan'></image> -->
+<!-- <image src='/icons/img/startaward.png' bindtap="startAward" style='width:150rpx;height:150rpx'></image> -->

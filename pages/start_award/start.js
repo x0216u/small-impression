@@ -1,4 +1,4 @@
-// pages/award/award.js
+// pages/start_award/start.js
 let canRoll = true; //加控制，防止用户点击两次
 var num = 1; //用在动画上，让用户在第二次点击的时候可以接着上次转动的角度继续转
 var context = wx.createCanvasContext('firstCanvas')
@@ -8,8 +8,8 @@ var w = 750 * rale
 var h = 750 * rale
 Page({
   data: {
-    canRoll:true,
-    awardList: [{name: '拍立得套装',color: colors[0]},
+    canRoll: true,
+    awardList: [{ name: '拍立得套装', color: colors[0] },
     {
       name: '旅行便携套装',
       color: colors[1]
@@ -30,31 +30,12 @@ Page({
     colorCircleFirst: '#FFDF2F', //圆点颜色1
     colorCircleSecond: '#FE4D32' //圆点颜色2
   },
-  onReady: function(e) {
-    var that =this;
-    that.loadCanvas()
-    setTimeout(function(){
-      wx.canvasToTempFilePath({
-        x: 0,
-        y: 0,
-        width: 750 * rale,
-        height: 750 * rale,
-        destWidth: 750 ,
-        destHeight: 750 ,
-        quality:1,
-        canvasId: 'firstCanvas',
-        success: function (res) {
-          console.log(res.tempFilePath)
-          wx.saveImageToPhotosAlbum({
-            filePath: res.tempFilePath,
-          })
-        }
-      })
-
-    },1000)
+  onReady: function (e) {
+    var that = this;
    
+    
   },
-  loadCanvas:function(){
+  loadCanvas: function () {
 
     var that = this;
     //定义人名和对应的颜色
@@ -89,7 +70,7 @@ Page({
     that.loadImage();
     ctx.draw();
   },
-  loadImage:function() { //绘制奖品图片，与绘制文字方法一致。
+  loadImage: function () { //绘制奖品图片，与绘制文字方法一致。
 
     let that = this;
     let data = this.data.awardList;
@@ -99,18 +80,18 @@ Page({
     for (let i = 0; i < Num; i++) {
       ctx.save();
       ctx.beginPath();
-      ctx.translate(w/2, h/2);
-      ctx.rotate((angel * (i + 2) - 20) * Math.PI / 180 );
+      ctx.translate(w / 2, h / 2);
+      ctx.rotate((angel * (i + 2) - 20) * Math.PI / 180);
       ctx.drawImage("/icons/img/award.jpg", -(w / 2 * 0.15), -(h / 2 * 0.5), (w / 2 * 0.3), (h / 2 * 0.15));
       ctx.restore();
     }
 
 
   },
-  touchCanvas:function(e){
-     this.startAward()
+  touchCanvas: function (e) {
+    this.startAward()
   },
-  onLoad: function(opt) {
+  onLoad: function (opt) {
     var _this = this;
     //圆点设置，顺时针设置
     var leftCircle = 7.5;
@@ -138,7 +119,7 @@ Page({
       circleList: circleList
     })
     //圆点闪烁
-    setInterval(function() {
+    setInterval(function () {
       if (_this.data.colorCircleFirst == '#FFDF2F') {
         _this.setData({
           colorCircleFirst: '#FE4D32',
@@ -159,9 +140,9 @@ Page({
     });
     this.aniData = aniData; //将动画对象赋值给this的aniData属性
   },
-  startAward:function(){
+  startAward: function () {
     var canRoll = this.data.canRoll
-    if (canRoll){
+    if (canRoll) {
       this.setData({
         canRoll: false
       })
@@ -171,7 +152,7 @@ Page({
       // console.log(`奖品是：${lottery[rightNum]}`);
       aniData.rotate(3600 * num - 360 / 5 * rightNum).step(); //设置转动的圈数
       this.setData({
-        aniData: aniData.export() 
+        aniData: aniData.export()
       })
       this.setData({
         canRoll: true
@@ -183,9 +164,9 @@ Page({
     var canRoll = true;
     if (canRoll) {
       canRoll = false;
-      
+
       num;
-      
+
     }
   }
 })

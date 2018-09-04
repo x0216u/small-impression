@@ -5,7 +5,8 @@
     "pages/answer/answer",
     "pages/user/user",
     "pages/main/main",
-    "pages/award/award"
+    "pages/award/award",
+    "pages/start_award/start"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c05282",

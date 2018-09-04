@@ -30,6 +30,11 @@ Page({
   },
   startAward:function(){
     wx.navigateTo({
+      url: '../start_award/start'
+    })
+  },
+  genePic: function () {
+    wx.navigateTo({
       url: '../award/award'
     })
   },
